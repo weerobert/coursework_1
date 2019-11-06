@@ -9,9 +9,12 @@ class Dec2Hex
     {
         if (args.length > 0) 
         {
-            try 
+            try ( Scanner scanner = new Scanner(args[0]) ) 
             {
-                Arg1 = Integer.parseInt(args[0]);
+                if (scanner.hasNextInt() && args[0] >= 1) 
+                {
+                    Arg1 = Integer.parseInt(args[0]);
+                }
             } 
             catch (NumberFormatException e) 
             {
