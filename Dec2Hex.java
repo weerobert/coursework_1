@@ -19,19 +19,19 @@ public class Dec2Hex
                 else
                 {
                     System.out.println("Argument must be an positive integer.");
-                	System.exit(1);
+                	System.exit(0);
                 }
             } 
             catch (NumberFormatException e) 
             {
                 System.out.println("Argument " + args[0] + " must be an integer.");
-                System.exit(1);
+                System.exit(0);
             }
         }
         else
         {
             System.out.println("There must be an integer argument.");
-        	System.exit(1);
+        	System.exit(0);
         }
     }
     public static void DoDecToHex(int num)
