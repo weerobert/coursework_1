@@ -18,13 +18,13 @@ public class Dec2Hex
                 }
                 else
                 {
-                    System.out.println("Argument must be an integer.");
+                    System.out.println("Argument must be an positive integer.");
                 	System.exit(1);
                 }
             } 
             catch (NumberFormatException e) 
             {
-                System.err.println("Argument " + args[0] + " must be an integer.");
+                System.out.println("Argument " + args[0] + " must be an integer.");
                 System.exit(1);
             }
         }
@@ -37,7 +37,7 @@ public class Dec2Hex
     public static void DoDecToHex(int num)
     {
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-         int rem;
+        int rem;
 	    String hexadecimal=""; 
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
         
